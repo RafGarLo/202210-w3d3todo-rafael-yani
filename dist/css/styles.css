@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header,
+footer {
+    flex: 1 0 auto;
+    color: bisque;
+    background-color: rgb(213, 112, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    flex: 10 0 auto;
+    margin: 1rem;
+    padding: 1rem;
+}
+input {
+    margin: 0.5em;
+    border-radius: 5px;
+    height: 2rem;
+}
+button {
+    width: 6rem;
+    height: 2rem;
+    background-color: rgb(111, 114, 192);
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: antiquewhite;
+    margin-left: 0.5em;
+}
