@@ -1,5 +1,5 @@
 import { Component } from './component.js';
-export class AddTask extends Component {
+export class Item extends Component {
     constructor(selector, handle) {
         super();
         this.selector = selector;
@@ -7,13 +7,10 @@ export class AddTask extends Component {
         this.template = this.createTemplate();
         this.renderOuter(this.selector, this.template);
         setTimeout(() => {
-            var _a;
-            (_a = document
-                .querySelector('form')) === null || _a === void 0 ? void 0 : _a.addEventListener('submit', (ev) => {
+            document.querySelectorAll('.eraser').forEach((item) => item.addEventListener('click', (ev) => {
                 ev.preventDefault();
-                console.log('Tengo que añadir');
                 handle(ev);
-            });
+            }));
         }, 100);
     }
     createTemplate() {

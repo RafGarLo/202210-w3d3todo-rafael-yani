@@ -3,9 +3,7 @@
 }
 body {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header,
@@ -27,6 +25,15 @@ input {
     border-radius: 5px;
     height: 2rem;
 }
+ul {
+    list-style: none;
+}
+li {
+    border: 1px rgb(196, 194, 194) solid;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+}
 button {
     width: 6rem;
     height: 2rem;
@@ -35,4 +42,5 @@ button {
     margin-top: 1rem;
     color: antiquewhite;
     margin-left: 0.5em;
+    cursor: pointer;
 }
